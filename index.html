@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" />
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>/
+    <main>
+        <section class="calculadora">
+            <div class="calculadora__visor">
+                <input type="text" id="visor" value="" readonly>
+            </div>
+
+            <div class="calculadora__teclas">
+                <input type="button" value="x" onclick="botao('**')" />
+                <input type="button" id="delete" value="DEL" onclick="deletar()" />
+                <input type="button" value="%" onclick="botao(value)" />
+                <input type="button" value="C" onclick="limpar()" />
+                <input type="button" value="7" onclick="botao(value)" />
+                <input type="button" value="8" onclick="botao(value)" />
+                <input type="button" value="9" onclick="botao(value)" />
+                <input type="button" value="+" onclick="botao('*')" class="calculadora__teclas-operadores" />
+                <input type="button" value="4" onclick="botao(value)" />
+                <input type="button" value="5" onclick="botao(value)" />
+                <input type="button" value="6" onclick="botao(value)" />
+                <input type="button" value="-" onclick="botao(value)" class="calculadora__teclas-operadores" />
+                <input type="button" value="1" onclick="botao(value)" />
+                <input type="button" value="2" onclick="botao(value)" />
+                <input type="button" value="3" onclick="botao(value)" />
+                <input type="button" value="/" onclick="botao(value)" class="calculadora__teclas-operadores" />
+                <input type="button" value="0" onclick="botao(value)" />
+                <input type="button" value="." onclick="botao(value)" />
+                <input type="button" id="igual" value="=" onclick="calc()" />
+                <input type="button" value="+" onclick="botao(value)" class="calculadora__teclas-operadores" />
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
